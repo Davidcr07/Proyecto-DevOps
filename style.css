@@ -1,0 +1,222 @@
+/* ===============================
+   RESET BÁSICO
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ===============================
+   HEADER
+================================= */
+header {
+    background: #0a1f44;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5c518;
+}
+
+/* ===============================
+   HERO
+================================= */
+#inicio {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#inicio img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+#inicio article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#inicio h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#inicio button {
+    padding: 10px 20px;
+    border: none;
+    background: #f5c518;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#inicio button:hover {
+    background: white;
+}
+
+/* ===============================
+   SECCIONES GENERALES
+================================= */
+section {
+    padding: 50px 10%;
+}
+
+section header {
+    background: none;
+    color: #0a1f44;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 28px;
+    border-left: 5px solid #0a1f44;
+    padding-left: 10px;
+}
+
+/* ===============================
+   LEYENDAS
+================================= */
+#leyendas article {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#leyendas img {
+    border-radius: 10px;
+    max-width: 250px;
+}
+
+/* ===============================
+   PLANTILLA
+================================= */
+#plantilla {
+    background: #ffffff;
+}
+
+#plantilla article {
+    background: #f9fafc;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#plantilla article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#plantilla img {
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+
+/* ===============================
+   NOTICIAS
+================================= */
+#noticias article {
+    margin: 20px 0;
+}
+
+#noticias img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   TÍTULOS
+================================= */
+#titulos ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+footer {
+    background: #0a1f44;
+    color: white;
+    padding: 30px 10%;
+}
+
+footer section {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #f5c518;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+
+    #inicio h2 {
+        font-size: 26px;
+    }
+
+    #leyendas article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+}
