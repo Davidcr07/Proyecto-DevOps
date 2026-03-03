@@ -220,3 +220,13 @@ footer a:hover {
         gap: 10px;
     }
 }
+
+/* ===== JS helpers ===== */
+header.scrolled {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+nav a.active {
+  color: #f5c518;
+  text-decoration: underline;
+}
